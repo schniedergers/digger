@@ -200,7 +200,7 @@ workflows:
 </ParamField>
 
 <ParamField path="disable_digger_apply_status_check" type="boolean" default="false">
-  Disable the status check that verifies apply was executed.
+  Disable the aggregate `digger/apply` status check. When `true`, Digger neither creates nor updates that check, so PRs that are never applied from a comment do not show a pending check.
 </ParamField>
 
 <ParamField path="comment_render_mode" type="string" default="basic">
